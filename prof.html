@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+
+      .list-wrapper {
+        /* margin: 30px auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* List component */
+      .list {  
+        background-color: #fff;
+        list-style: none;
+        margin: 0;
+        padding: 15px;
+        max-width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      }
+
+      .list .list-item {
+        display: flex;
+        padding: 10px 5px;
+      }
+      .list .list-item:not(:last-child) {
+        border-bottom: 1px solid #eee;
+      }
+
+      /*list item image wrapper*/
+      .list .list-item__image {
+        flex-shrink: 0;
+        height: 80px;
+      }
+      .list .list-item__image img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+      }
+
+      /*list item content*/
+      .list .list-item__content {
+        flex-grow: 1;
+        padding: 0 20px;
+      }
+      .list .list-item__content h4 {
+        margin: 0;
+        font-size: 18px;
+        margin-top: 15px;
+      }
+
+      .list .list-item__content p {
+        margin-top: 5px;
+        color: grey;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list-wrapper">
+      <ul class="list">
+        <!--Flexbox list item-->
+        <li class="list-item">
+          <div class="list-item__image">
+            <img
+              src="https://eduport.webestica.com/assets/images/avatar/09.jpg"
+              alt="Thumbnail"
+            />
+          </div>
+          <div class="list-item__content">
+            <h4>Linda Hart</h4>
+            <p>6765 Shady Ln Dr</p>
+          </div>
+        </li>
+
+        <!--Flexbox list item-->
+        <li class="list-item">
+          <div class="list-item__image">
+            <img
+              src="https://eduport.webestica.com/assets/images/avatar/04.jpg"
+              alt="Thumbnail"
+            />
+          </div>
+          <div class="list-item__content">
+            <h4>Roger Medina</h4>
+            <p>2420 Paddock Way</p>
+          </div>
+        </li>
+
+        <!--Flexbox list item-->
+        <li class="list-item">
+          <div class="list-item__image">
+            <img
+              src="https://eduport.webestica.com/assets/images/avatar/03.jpg"
+              alt="Thumbnail"
+            />
+          </div>
+          <div class="list-item__content">
+            <h4>Dean Sullivan</h4>
+            <p>6727 Airplane Ave</p>
+          </div>
+        </li>
+
+        <!--Flexbox list item-->
+        <li class="list-item">
+          <div class="list-item__image">
+            <img
+              src="https://eduport.webestica.com/assets/images/avatar/01.jpg"
+              alt="Thumbnail"
+            />
+          </div>
+          <div class="list-item__content">
+            <h4>Elizabeth Austin</h4>
+            <p>6685 Blossom Hill Rd</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
